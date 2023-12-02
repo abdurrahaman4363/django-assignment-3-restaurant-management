@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<div class="row p-5">
+  <div class="col-6 p-4">
+    <h2 class="mb-3 fs-1 fw-bold">
+      <small class="text-primary fs-1 fw-bold">About Us</small>
+    </h2>
+    <p>
+      At FoodDay, we believe in more than just satisfying your appetite; we
+      aim to <br />
+      create lasting memories through the art of food. Our warm and inviting
+      <br />
+      ambiance sets the stage for a dining experience that goes beyond the
+      ordinary. <br />
+      Whether you're here for a special occasion or a casual gathering,
+      <br />our commitment to quality and service ensures that every visit
+      <br />is a culinary adventure...
+    </p>
+    <button type="button" class="btn btn-primary">Read More</button>
+  </div>
+  <div class="col-6">
+    <img
+      style="height: 100%; width: 80%"
+      src="{% static 'images/about2.jpg' %}"
+      alt="banner img"
+    />
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="row p-5">
+  <div class="col-6 p-4">
+    <h2 class="mb-3 fs-1 fw-bold">
+      Welcome To<br />
+      Our <small class="text-primary fs-1 fw-bold">FoodDay </small>Restaurant
+    </h2>
+    <p>
+      Where every dish is a masterpiece and every meal is a <br />
+      celebration of flavors. Step into a world of culinary <br />
+      excellence as we invite you on a gastronomic journey like no other.
+    </p>
+    <button type="button" class="btn btn-primary">More About</button>
+  </div>
+  <div class="col-6">
+    <img
+      style="height: 100%; width: 80%"
+      src="{% static 'images/banner.jpg' %}"
+      alt="banner img"
+    />
+  </div>
+</div>
+
+{% endblock %}
